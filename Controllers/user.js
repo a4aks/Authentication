@@ -35,7 +35,7 @@ async function createUser(req, res, next) {
         let userDetail = req.body;
         let response = await userModel.insertMany([userDetail]);
         let parentInfo = {
-            empId: response._id,
+            empId: response[0]._id,
             firstName: req.body.parents.firstName,
             lastName: req.body.parents.lastName,
             age: req.body.parents.age,
