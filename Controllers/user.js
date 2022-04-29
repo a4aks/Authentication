@@ -139,6 +139,9 @@ async function signUp(req, res, next) {
     const response = await userModel.insertMany([userDetail]);
     res.json(response);
 }
+async function dashboard(req, res, next) {
+    res.send('We are on dashboard');
+}
 
 
 module.exports = {
@@ -151,7 +154,8 @@ module.exports = {
     sendEmail,
     saveImage,
     signIn,
-    signUp
+    signUp,
+    dashboard
 }
 
 

@@ -38,7 +38,7 @@ app.set('views', './views');
 
 app.use(passport.initialize());
 
-
+app.get('/',userController.dashboard);
 app.post('/user', userController.createUser);
 app.get('/user', userController.getAllUser)
 app.get('/user/:userId', userController.getUserById);
