@@ -10,25 +10,3 @@ const parents = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('parents', parents);
-
-
-// // user                                                parents
-//    {                                                    {}
-//        id:1
-//       name : "neeraj",
-//       age:25,
-//       ... 
-//    } 
-
-//  //Parent
-//  {
-
-//      empId: 1,
-//      name:"fatherName",
-//      age:""
-//  }
-//  {
-//     empId: 1,
-//     name:"motherName",
-//     age:""
-// }   

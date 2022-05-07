@@ -123,7 +123,11 @@ app.get('/google/callback',
 
         }
 
-    })
+    });
+
+app.post('/createInsurance',userController.createInsurance)
+app.get('/getAllInsurance',userController.getAllInsurance)
+
 
 
 

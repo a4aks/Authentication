@@ -9,7 +9,8 @@ const user = new mongoose.Schema({
     "gender": { type: String, required: true },
     "id": { type: String, required: true },
     "email": { type: String, required: true },
-    "password": { type: String, required: true }
+    "password": { type: String, required: true },
+    "parentsId": [{ type: mongoose.Types.ObjectId, ref: "parents" }]
 });
 
 module.exports = mongoose.model('user', user);
